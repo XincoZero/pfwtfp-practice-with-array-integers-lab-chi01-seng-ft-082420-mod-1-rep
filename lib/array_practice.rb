@@ -2,18 +2,25 @@ array_of_integers = *0...50
 
 def all_odds(array)
   # return all odd numbers from the input array
+  array.select.each_with_index { |i| i.odd?}
 end
 
 def all_evens(array)
   # return all even numbers from the input array
+  array.select.each_with_index { |i| i.even?}
 end
 
 def all_squares(array)
   # return the square of all numbers from the input array
+  array.map do |i|
+    i ** 2 
+  end 
 end
 
 def first_square_greater_than_350(array)
-  # return the first number from the input array whose square is greater than 350
+  array.select do |i|
+    
+  end 
 end
 
 def all_squares_greater_than_350(array)
